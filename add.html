@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>OFFICE NOTARIAL DE BUJUMBURA</title>
+	
+		<!-- Fonts -->
+		<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3-web/css/all.css">
+		
+		<!-- Bootsrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+	
+		<!-- Custom stylesheet -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Javascript -->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	</head>
+
+<body>
+	
+	<div class="container text-center">
+		<h1 class="py-4 bg-dark text-light rounded"><i class="fas fa-swatchbook"></i> OFFICE NOTARIAL DE BUJUMBURA</h1>
+		<div class="d-flex justify-content-center">
+			<div class="w-50"><a href="index.php" class="btn btn-secondary">HOME</a></div>
+			<div class="w-50"><a href="search.php" class="btn btn-primary">RECHERCHER DOSSIER</a></div>
+			<div class="w-50"><a href="index.php" class="btn btn-danger">RETOUR</a></div>
+		</div><br><br>
+	
+
+		<div style="width:85%;margin-left:80px;">
+			<form action="add.php" method="post" name="form1">
+				<div class="pt-2 input-group mb-2">
+					<div class="input-group-prepend">
+						<div class="input-group-text bg-warning"><i class='fas fa-calendar-alt'></i></div>
+					</div>
+					<input type="date" name="dateacte" class="form-control" placeholder="Date de l'acte(mm/jj/aa)" autocomplete="off">
+				</div>
+				<div class="pt-2 input-group mb-2">
+					<div class="input-group-prepend">
+						<div class="input-group-text bg-warning"><i class='fas fa-book'></i></div>
+					</div>
+					<input type="text" name="natureacte" class="form-control" placeholder="Nature de l'acte" autocomplete="off">
+				</div>
+				<div class="pt-2 input-group mb-2">
+					<div class="input-group-prepend">
+						<div class="input-group-text bg-warning"><i class='fas fa-users'></i></div>
+					</div>
+					<input type="text" name="nomprenom" class="form-control" placeholder="Nom & Prenom de(s) comparant(s)" autocomplete="off">
+				</div>
+				
+				<div class="d-flex justify-content-center">
+					<input type="submit" name="Submit" class="btn btn-success" value="ENREGISTRER">
+				</div>
+				
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
